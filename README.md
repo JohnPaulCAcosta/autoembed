@@ -26,3 +26,6 @@ library(autoembed)
 ## basic example code
 ```
 
+## Citation
+
+Acosta, J. P. C., Park, S. W., Stewart, D. G., Lozano-Cavazos, E. A., Webb, S. L., and Schafer, T. L. J. 2026. "Comparison of machine learning interpolation models for movement trajectories of desert bighorn sheep." _Environmental and Ecological Statistics_ (2026). https://doi.org/10.1007/s10651-026-00713-w
