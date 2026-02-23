@@ -32,6 +32,7 @@ dat = data.frame(
   height = c(10, 8, 9, 10, 10, 15, 18, 20, 25, 20)
 )
 
+# create lag columns for all variables other than time
 auto.out = autoembed::data.frame_lag_lead(
   dataframe = dat,
   covariates = colnames(dat)[-1],
@@ -40,6 +41,7 @@ auto.out = autoembed::data.frame_lag_lead(
 
 dat = auto.out$dataframe
 
+# fitting RF model with data excluding rows with NAs for lagged variables
 randomForest(
   x = dat[-1, auto.out$new.covariates],
   y = dat[-1, "longitude"],
